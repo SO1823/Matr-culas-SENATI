@@ -1,155 +1,64 @@
-/* Reset de estilos */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
+ <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
 
-/* Tipografía y colores base */
-body {
-  font-family: 'Roboto', sans-serif;
-  line-height: 1.6;
-  color: #333;
-  background-color: #f4f4f4;
-}
+    body {
+      font-family: 'Roboto', sans-serif;
+      background-color: #f4f4f4;
+      color: #333;
+    }
 
-/* Contenedor */
-.container {
-  width: 90%;
-  max-width: 1200px;
-  margin: auto;
-  overflow: hidden;
-}
+    header {
+      background-color: #0d47a1;
+      color: white;
+      padding: 20px 0;
+      text-align: center;
+    }
 
-/* Encabezado */
-header {
-  background-color: #0d47a1;
-  color: #fff;
-  padding: 20px 0;
-}
+    nav {
+      background-color: #1976d2;
+      display: flex;
+      justify-content: center;
+      padding: 10px 0;
+    }
 
-header h1 {
-  text-align: center;
-}
+    nav a {
+      color: white;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+    }
 
-nav ul {
-  display: flex;
-  justify-content: center;
-  list-style: none;
-  margin-top: 10px;
-}
+    section {
+      padding: 40px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
 
-nav ul li {
-  margin: 0 15px;
-}
+    h2 {
+      color: #0d47a1;
+      margin-bottom: 20px;
+    }
 
-nav ul li a {
-  color: #fff;
-  text-decoration: none;
-  font-weight: bold;
-}
+    footer {
+      background-color: #0d47a1;
+      color: white;
+      text-align: center;
+      padding: 15px 0;
+      margin-top: 40px;
+    }
 
-/* Sección Hero */
-.hero {
-  background: url('https://via.placeholder.com/1200x400') no-repeat center center/cover;
-  color: #fff;
-  padding: 100px 0;
-  text-align: center;
-}
-
-.hero .btn {
-  display: inline-block;
-  margin-top: 20px;
-  padding: 10px 30px;
-  background-color: #1976d2;
-  color: #fff;
-  text-decoration: none;
-  border-radius: 5px;
-}
-
-/* Sección Carreras */
-.carreras {
-  background-color: #fff;
-  padding: 50px 0;
-}
-
-.carreras h2 {
-  text-align: center;
-  margin-bottom: 30px;
-}
-
-.carreras ul {
-  list-style: none;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-
-.carreras ul li {
-  background-color: #e3f2fd;
-  margin: 10px;
-  padding: 20px;
-  border-radius: 5px;
-  flex: 1 1 200px;
-  text-align: center;
-}
-
-/* Formulario */
-.formulario {
-  background-color: #f9f9f9;
-  padding: 50px 0;
-}
-
-.formulario h2 {
-  text-align: center;
-  margin-bottom: 30px;
-}
-
-form {
-  max-width: 600px;
-  margin: auto;
-  background: #fff;
-  padding: 30px;
-  border-radius: 5px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-form label {
-  display: block;
-  margin-bottom: 5px;
-  font-weight: bold;
-}
-
-form input,
-form select {
-  width: 100%;
-  padding: 10px;
-  margin-bottom: 20px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-}
-
-form .btn {
-  display: block;
-  width: 100%;
-  padding: 10px;
-  background-color: #1976d2;
-  color: #fff;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-}
-
-form .btn:hover {
-  background-color: #1565c0;
-}
-
-/* Pie de página */
-footer {
-  background-color: #0d47a1;
-  color: #fff;
-  text-align: center;
-  padding: 20px 0;
-  margin-top: 40px;
-}
+    .btn {
+      background-color: #1976d2;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      text-decoration: none;
+    }
+  </style>
 
