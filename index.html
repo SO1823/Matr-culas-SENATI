@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<style>
+    body {
+        font-family: 'Segoe UI', Arial, sans-serif;
+        background: #f4f6fb;
+        margin: 0;
+        padding: 0;
+        color: #222;
+    }
+    header {
+        background: #003366;
+        color: #fff;
+        padding: 30px 0 20px 0;
+        text-align: center;
+        box-shadow: 0 2px 8px #0001;
+    }
+    header img {
+        width: 120px;
+        margin-bottom: 10px;
+    }
+    nav {
+        background: #005baa;
+        display: flex;
+        justify-content: center;
+        gap: 30px;
+        padding: 15px 0;
+        box-shadow: 0 2px 8px #0001;
+    }
+    nav a {
+        color: #fff;
+        text-decoration: none;
+        font-weight: 500;
+        font-size: 1.1em;
+        padding: 8px 18px;
+        border-radius: 5px;
+        transition: background 0.2s;
+    }
+    nav a:hover {
+        background: #003366;
+    }
+    section {
+        display: none;
+        max-width: 600px;
+        margin: 40px auto;
+        background: #fff;
+        border-radius: 12px;
+        box-shadow: 0 4px 24px #0002;
+        padding: 32px 36px;
+        animation: fadeIn 0.5s;
+    }
+    section.active {
+        display: block;
+    }
+    h1, h2 {
+        margin-top: 0;
+    }
+    form label {
+        display: block;
+        margin-top: 18px;
+        font-weight: 500;
+    }
+    form input, form select, form textarea {
+        width: 100%;
+        padding: 10px;
+        margin-top: 6px;
+        border: 1px solid #b0c4de;
+        border-radius: 6px;
+        font-size: 1em;
+        background: #f8fafc;
+        box-sizing: border-box;
+        transition: border 0.2s;
+    }
+    form input:focus, form select:focus, form textarea:focus {
+        border: 1.5px solid #005baa;
+        outline: none;
+    }
+    form button {
+        margin-top: 24px;
+        background: #005baa;
+        color: #fff;
+        border: none;
+        padding: 12px 0;
+        width: 100%;
+        border-radius: 6px;
+        font-size: 1.1em;
+        font-weight: 600;
+        cursor: pointer;
+        transition: background 0.2s;
+    }
+    form button:hover {
+        background: #003366;
+    }
+    ul {
+        padding-left: 20px;
+    }
+    footer {
+        background: #003366;
+        color: #fff;
+        text-align: center;
+        padding: 18px 0;
+        margin-top: 40px;
+        font-size: 0.98em;
+        letter-spacing: 0.5px;
+    }
+    @keyframes fadeIn {
+        from { opacity: 0; transform: translateY(30px);}
+        to { opacity: 1; transform: translateY(0);}
+    }
+    @media (max-width: 700px) {
+        section {
+            padding: 18px 8px;
+            max-width: 98vw;
+        }
+        header img {
+            width: 80px;
+        }
+    }
+</style>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Matrículas SENATI</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<header>
+    <img src="img/logo-senati.png" alt="Logo SENATI">
+    <h1>Matrículas SENATI</h1>
+</header>
+
+<nav>
+    <a href="#" onclick="mostrarSeccion('inicio')">Inicio</a>
+    <a href="#" onclick="mostrarSeccion('matricula')">Matrícula</a>
+    <a href="#" onclick="mostrarSeccion('cursos')">Cursos</a>
+    <a href="#" onclick="mostrarSeccion('contacto')">Contacto</a>
+</nav>
+
+<section id="inicio" class="active">
+    <h2>Bienvenido al Sistema de Matrículas SENATI</h2>
+    <p>Utiliza esta plataforma para matricularte en nuestros cursos técnicos y profesionales.</p>
+</section>
+
+<section id="matricula">
+    <h2>Formulario de Matrícula</h2>
+    <form>
+        <label>DNI *</label>
+        <input type="text" required placeholder="Ej: 12345678">
+
+        <label>Nombres *</label>
+        <input type="text" required placeholder="Tus nombres">
+
+        <label>Apellidos *</label>
+        <input type="text" required placeholder="Tus apellidos">
+
+        <label>Correo Electrónico *</label>
+        <input type="email" required placeholder="tucorreo@ejemplo.com">
+
+        <label>Fecha de Nacimiento *</label>
+        <input type="date" required>
+
+        <label>Curso a Matricularse *</label>
+        <select required>
+            <option value="">Seleccione un curso</option>
+            <option>Programación Web</option>
+            <option>Mecánica de Producción</option>
+            <option>Redes y Seguridad</option>
+            <option>Electrotecnia Industrial</option>
+        </select>
+
+        <label>Modalidad</label>
+        <select>
+            <option>Presencial</option>
+            <option>Virtual</option>
+        </select>
+
+        <label>Observaciones</label>
+        <textarea placeholder="Información adicional (opcional)"></textarea>
+
+        <button type="submit">Enviar Matrícula</button>
+    </form>
+</section>
+
+<section id="cursos">
+    <h2>Cursos Disponibles</h2>
+    <ul>
+        <li>Programación Web</li>
+        <li>Redes y Seguridad Informática</li>
+        <li>Mecánica de Producción</li>
+        <li>Electrotecnia Industrial</li>
+        <li>Automatización y Control</li>
+    </ul>
+</section>
+
+<section id="contacto">
+    <h2>Contacto</h2>
+    <p><strong>Dirección:</strong> Av. Los Próceres 1234, Lima</p>
+    <p><strong>Teléfono:</strong> (01) 555-1234</p>
+    <p><strong>Correo:</strong> informes@senati.edu.pe</p>
+</section>
+
+<footer>
+    <p>&copy; 2025 SENATI - Sistema de Matrículas. Todos los derechos reservados.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
