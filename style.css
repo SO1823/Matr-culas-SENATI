@@ -1,86 +1,155 @@
-<!-- Tipografía Roboto de Google Fonts -->
-<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+/* Reset de estilos */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
-<style>
-  body {
-    font-family: 'Roboto', sans-serif;
-    background: linear-gradient(to right, #e3f2fd, #ffffff);
-    margin: 0;
-    padding: 0;
-  }
+/* Tipografía y colores base */
+body {
+  font-family: 'Roboto', sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background-color: #f4f4f4;
+}
 
-  .form-container {
-    max-width: 500px;
-    margin: 60px auto;
-    background: #fff;
-    padding: 40px 30px;
-    border-radius: 16px;
-    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease;
-  }
+/* Contenedor */
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+  overflow: hidden;
+}
 
-  .form-container:hover {
-    transform: scale(1.01);
-  }
+/* Encabezado */
+header {
+  background-color: #0d47a1;
+  color: #fff;
+  padding: 20px 0;
+}
 
-  .form-container h2 {
-    text-align: center;
-    margin-bottom: 30px;
-    color: #0d47a1;
-    font-size: 26px;
-  }
+header h1 {
+  text-align: center;
+}
 
-  .form-group {
-    margin-bottom: 20px;
-  }
+nav ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  margin-top: 10px;
+}
 
-  .form-group label {
-    display: block;
-    margin-bottom: 8px;
-    color: #333;
-    font-weight: 500;
-  }
+nav ul li {
+  margin: 0 15px;
+}
 
-  .form-group input,
-  .form-group select {
-    width: 100%;
-    padding: 12px 14px;
-    border: 2px solid #ccc;
-    border-radius: 10px;
-    font-size: 16px;
-    background-color: #f8f9fa;
-    transition: all 0.3s ease;
-  }
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+}
 
-  .form-group input:focus,
-  .form-group select:focus {
-    border-color: #1976d2;
-    background-color: #ffffff;
-    outline: none;
-    box-shadow: 0 0 0 3px rgba(25, 118, 210, 0.2);
-  }
+/* Sección Hero */
+.hero {
+  background: url('https://via.placeholder.com/1200x400') no-repeat center center/cover;
+  color: #fff;
+  padding: 100px 0;
+  text-align: center;
+}
 
-  .submit-btn {
-    width: 100%;
-    padding: 14px;
-    background-color: #1976d2;
-    border: none;
-    border-radius: 10px;
-    color: #fff;
-    font-size: 18px;
-    font-weight: bold;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-  }
+.hero .btn {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 30px;
+  background-color: #1976d2;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+}
 
-  .submit-btn:hover {
-    background-color: #1565c0;
-  }
+/* Sección Carreras */
+.carreras {
+  background-color: #fff;
+  padding: 50px 0;
+}
 
-  @media (max-width: 600px) {
-    .form-container {
-      margin: 30px 20px;
-      padding: 30px 20px;
-    }
-  }
-</style>
+.carreras h2 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.carreras ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.carreras ul li {
+  background-color: #e3f2fd;
+  margin: 10px;
+  padding: 20px;
+  border-radius: 5px;
+  flex: 1 1 200px;
+  text-align: center;
+}
+
+/* Formulario */
+.formulario {
+  background-color: #f9f9f9;
+  padding: 50px 0;
+}
+
+.formulario h2 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+form {
+  max-width: 600px;
+  margin: auto;
+  background: #fff;
+  padding: 30px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+form label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+form input,
+form select {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+form .btn {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  background-color: #1976d2;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+form .btn:hover {
+  background-color: #1565c0;
+}
+
+/* Pie de página */
+footer {
+  background-color: #0d47a1;
+  color: #fff;
+  text-align: center;
+  padding: 20px 0;
+  margin-top: 40px;
+}
+
